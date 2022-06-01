@@ -210,7 +210,7 @@ img:hover {
 }
 
 .info {
-  width: 300px;
+  width: 25%;
 }
 
 button {
@@ -222,4 +222,32 @@ button {
   color: var(--neutral-200-background);
   font-family: 'Urbanist', sans-serif;
   font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    /* background-color: lightblue; */
+  }
+
+  .card {
+    border-radius: 20px;
+    height: auto;
+    width: 90%;
+    padding-left: 52px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .case-study {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
