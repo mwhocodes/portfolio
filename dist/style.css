@@ -130,7 +130,7 @@ article {
 /* header starting */
 header {
   height: 100vh;
-  width: auto;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -226,14 +226,14 @@ button {
 
 @media only screen and (max-width: 600px) {
   body {
-    /* background-color: lightblue; */
+    font-size: 14px;
   }
 
   .card {
     border-radius: 20px;
     height: auto;
     width: 90%;
-    padding-left: 52px;
+    padding: 0 20px;
 
     display: flex;
     align-items: center;
@@ -242,6 +242,7 @@ button {
 
   .info {
     width: 100%;
+    padding: 32px 0;
   }
 
   .case-study {
@@ -249,5 +250,29 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    padding-bottom: 50px;
+  }
+
+  section {
+    padding: 50px;
+  }
+
+  article {
+    margin: 0;
+  }
+
+  nav {
+    display: none;
+  }
+
+  header {
+    width: 100vw;
+    flex-direction: column;
+    padding: 100px;
+  }
+
+  #hero {
+    display: none;
   }
 }
