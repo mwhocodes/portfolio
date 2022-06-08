@@ -1,0 +1,204 @@
+/* nav starting */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 100px;
+  height: 100vh;
+  position: fixed;
+}
+
+a {
+  display: flex;
+  align-items: center;
+
+  width: 48px;
+  height: 48px;
+  margin: 12px;
+}
+
+path {
+  stroke: var(--neutral-600-placeholder);
+}
+
+/* nav end */
+
+/* header starting */
+header {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 5vw 0 calc(5vw + 100px);
+}
+
+#hero {
+  padding: 200px;
+}
+
+.hello {
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: var(--neutral-900-text-title);
+}
+
+.location {
+  display: flex;
+}
+
+.location svg {
+  margin-right: 8px;
+}
+
+/* header end */
+
+article {
+  padding: 0 5vw 0 calc(5vw + 100px);
+}
+
+.case-study {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 20px;
+  height: 80%;
+  width: 100%;
+  padding-left: 52px;
+
+  display: flex;
+  align-items: center;
+}
+
+.item1 {
+  background: rgba(237, 55, 41, 0.1);
+}
+
+.item2 {
+  background: rgba(229, 109, 69, 0.1);
+}
+
+.item1 > .tag {
+  color: #751818;
+}
+
+.article-description {
+  margin-bottom: 0.5rem;
+}
+
+.tag {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+
+  padding: 8px 12px;
+  background: rgba(237, 55, 41, 0.15);
+  border-radius: 8px;
+  margin-right: 4px;
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  display: flex;
+  width: 75%;
+}
+
+.right img {
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  transition: all 0.5s;
+}
+
+.right img:hover {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+button {
+  background-color: var(--neutral-900-text-title);
+  padding: 16px 18px;
+  border: none;
+  border-radius: 12px;
+  margin-top: 20px;
+
+  color: var(--neutral-200-background);
+  font-family: 'Urbanist', sans-serif;
+  font-size: 1rem;
+
+  cursor: pointer;
+}
+
+ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0.75rem 0;
+}
+
+ul li svg {
+  transform: scale(0.7);
+  margin-right: 8px;
+}
+
+ul li path {
+  stroke: none;
+  fill: #e56e44;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .card {
+    border-radius: 20px;
+    height: auto;
+    width: 90%;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .info {
+    width: 100%;
+    padding: 32px 0;
+  }
+
+  .case-study {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  article {
+    padding: 0 2vw;
+  }
+
+  nav {
+    display: none;
+  }
+
+  header {
+    width: auto;
+    flex-direction: column;
+    padding: 32px;
+  }
+
+  #hero {
+    display: none;
+  }
+}
