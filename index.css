@@ -2,16 +2,6 @@
 html {
   scroll-behavior: smooth;
 }
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  width: 100px;
-  height: 100vh;
-  position: fixed;
-}
 
 a {
   display: flex;
@@ -171,11 +161,18 @@ ul li path {
     border-radius: 20px;
     height: auto;
     width: 90%;
-    padding: 0 20px;
+    padding: 20px 20px;
+    margin-bottom: 35px;
 
     display: flex;
-    align-items: center;
     flex-direction: column;
+  }
+  .card .left {
+    width: 100%;
+  }
+  .card .right {
+    margin-top: 20px;
+    width: 100%;
   }
 
   .info {
@@ -194,14 +191,14 @@ ul li path {
     padding: 0 2vw;
   }
 
-  nav {
-    display: none;
-  }
-
   header {
     width: auto;
     flex-direction: column;
     padding: 32px;
+  }
+
+  footer {
+    padding: 0;
   }
 
   #hero {

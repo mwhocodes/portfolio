@@ -104,3 +104,36 @@ li {
   padding: 0.75rem 0;
   list-style: none;
 }
+
+@media only screen and (max-width: 600px) {
+  .content,
+  section {
+    padding: 20px;
+  }
+  .scope {
+    padding: 0;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 20px 0;
+  }
+  header {
+    height: auto;
+    margin: 20px 0;
+  }
+  section .content {
+    width: 100%;
+    margin: 0;
+  }
+  section .photo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .summary {
+    padding-bottom: 70px;
+  }
+}
