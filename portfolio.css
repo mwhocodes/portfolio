@@ -37,6 +37,10 @@ header {
   background: rgba(237, 55, 41, 0.1);
 }
 
+header h6 {
+  font-weight: 600;
+}
+
 #hero img {
   width: 85%;
   display: flex;
