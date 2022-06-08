@@ -123,10 +123,16 @@ a:hover path {
     position: fixed;
     background: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     z-index: 1;
   }
   .nav a {
     display: flex;
     justify-content: center;
+  }
+
+  h1 {
+    font-size: 4rem;
+    font-weight: normal;
   }
 }
