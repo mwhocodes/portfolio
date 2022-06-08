@@ -83,11 +83,17 @@ h5 {
 h6 {
   font-size: 1.25rem;
   line-height: 2rem;
-  font-weight: 600;
+  font-weight: normal;
 }
 
-p,
-.text-primary {
-  color: var(--neutral-800-text-primary);
+p {
   line-height: 1.5rem;
+}
+
+path {
+  stroke: var(--neutral-900-text-title);
+}
+
+a:hover path {
+  fill: var(--neutral-900-text-title);
 }
