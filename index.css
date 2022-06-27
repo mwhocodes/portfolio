@@ -30,9 +30,6 @@ footer {
   flex-direction: column;
 }
 
-footer h3 {
-}
-
 #hero {
   padding: 200px;
 }
@@ -75,15 +72,31 @@ article {
 }
 
 .item1 {
-  background: rgba(237, 55, 41, 0.1);
-}
-
-.item2 {
   background: rgba(229, 109, 69, 0.1);
 }
 
-.item1 > .tag {
-  color: #751818;
+.item2 {
+  background: rgba(19, 206, 102, 0.15);
+}
+
+.item3 {
+  background: rgba(237, 55, 41, 0.1);
+}
+
+.item4 {
+  background: rgba(255, 198, 60, 0.15);
+}
+
+.item2 .tag {
+  background: rgba(19, 206, 102, 0.3);
+}
+
+.item3 .tag {
+  background: rgba(237, 55, 41, 0.15);
+}
+
+.item4 .tag {
+  background: rgba(255, 198, 60, 0.3);
 }
 
 .article-description {
@@ -95,7 +108,6 @@ article {
   line-height: 1.25rem;
 
   padding: 8px 12px;
-  background: rgba(237, 55, 41, 0.15);
   border-radius: 8px;
   margin-right: 4px;
 }
@@ -110,15 +122,15 @@ article {
 }
 
 .right img {
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 70%;
+  max-height: 70%;
   margin: auto;
   transition: all 0.5s;
 }
 
 .right img:hover {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 80%;
+  max-height: 80%;
 }
 
 button {

@@ -24,7 +24,7 @@ h6 {
   border-radius: 8px;
   margin-right: 8px;
 
-  background: rgba(237, 55, 41, 0.15);
+  background: rgba(255, 198, 60, 0.3);
 }
 
 /* nav starting */
@@ -59,7 +59,7 @@ header {
   align-items: center;
   justify-content: center;
 
-  background: rgba(237, 55, 41, 0.1);
+  background: rgba(255, 198, 60, 0.15);
 }
 
 header div {
@@ -73,7 +73,7 @@ header h6 {
 }
 
 #hero img {
-  width: 80%;
+  width: 100%;
   display: flex;
   margin: auto;
   padding-right: 5vw;
@@ -81,14 +81,28 @@ header h6 {
 
 header .content {
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
   padding-left: calc(5vw + 100px);
 
-  /* width: 100vw; */
+  width: 60%;
 }
 
-h2 {
-  margin: 3rem 0;
+ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+  /* margin: 0.75rem 0; */
+}
+
+ul li svg {
+  transform: scale(0.7);
+  margin-right: 8px;
+}
+
+ul li path {
+  stroke: none;
+  fill: #14ae5c;
 }
 
 .scope {
@@ -124,8 +138,8 @@ section .photo img {
 }
 
 .photo img {
-  width: 70%;
-  height: 70%;
+  width: 50%;
+  height: 50%;
 }
 
 section {
