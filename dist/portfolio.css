@@ -157,8 +157,13 @@ li {
     margin: 20px 0;
   }
   header {
+    flex-direction: column-reverse;
     height: auto;
     margin: 20px 0;
+  }
+
+  header .content {
+    padding: 40px;
   }
   section .content {
     width: 100%;
@@ -169,5 +174,8 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  section:nth-last-child(1) {
+    padding-bottom: 70px;
   }
 }
