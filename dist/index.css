@@ -1,20 +1,9 @@
-/* nav starting */
 html {
   scroll-behavior: smooth;
 }
 
-a {
-  display: flex;
-  align-items: center;
-
-  width: 48px;
-  height: 48px;
-  margin: 12px;
-}
-
-/* nav end */
-
 /* header starting */
+
 header,
 footer {
   height: 100vh;
@@ -30,31 +19,61 @@ footer {
   flex-direction: column;
 }
 
-#hero {
-  padding: 200px;
-}
-
-.hello {
-  font-weight: 500;
-  margin-bottom: 20px;
-  color: var(--neutral-900-text-title);
-}
-
 .location {
   display: flex;
+  align-items: center;
+}
+
+.location__content {
+  font-weight: 400;
+  color: var(--neutral-200);
 }
 
 .location svg {
   margin-right: 8px;
 }
 
+.hello {
+  margin-bottom: 20px;
+}
+
+.hello__text {
+  font-weight: 500;
+
+  /*! animating-gradients ==> text */
+  background-image: var(--gradient);
+  background-clip: text;
+
+  /* for chrome */
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 400%;
+  animation: animation 5s infinite alternate;
+}
+
+@keyframes animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.hello__description {
+  font-weight: normal;
+  color: var(--neutral-200);
+}
+
 /* header end */
 
-article {
+/* card starting */
+
+section {
   padding: 0 5vw 0 calc(5vw + 100px);
 }
 
-.case-study {
+.card__container {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -65,93 +84,83 @@ article {
   border-radius: 20px;
   height: 80%;
   width: 100%;
-  padding-left: 52px;
 
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
-.item1 {
-  background: rgba(229, 109, 69, 0.1);
-}
-
-.item2 {
-  background: rgba(19, 206, 102, 0.15);
-}
-
-.item3 {
-  background: rgba(237, 55, 41, 0.1);
-}
-
-.item4 {
-  background: rgba(255, 198, 60, 0.15);
-}
-
-.item2 .tag {
-  background: rgba(19, 206, 102, 0.3);
-}
-
-.item3 .tag {
-  background: rgba(237, 55, 41, 0.15);
-}
-
-.item4 .tag {
-  background: rgba(255, 198, 60, 0.3);
-}
-
-.article-description {
+.card__timeline {
+  color: var(--neutral-50);
+  font-weight: 600;
   margin-bottom: 0.5rem;
+  text-transform: uppercase;
 }
 
-.tag {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-
-  padding: 8px 12px;
-  border-radius: 8px;
-  margin-right: 4px;
+.card__content {
+  width: 30%;
+  margin-left: 80px;
 }
 
-.left {
-  width: 25%;
+.card__title {
+  color: var(--neutral-200);
+  font-weight: 700;
 }
 
-.right {
-  display: flex;
-  width: 75%;
+.card__description {
+  color: var(--neutral-300);
 }
 
-.right img {
-  max-width: 70%;
-  max-height: 70%;
+.card__photo {
+  width: 70%;
+}
+
+.card__photo img {
+  max-width: 100%;
+  max-height: 100%;
   margin: auto;
   transition: all 0.5s;
 }
 
-.right img:hover {
-  max-width: 80%;
-  max-height: 80%;
+.card__photo img:hover {
+  max-width: 110%;
+  max-height: 110%;
 }
 
-button {
-  background-color: var(--neutral-900-text-title);
-  padding: 16px 18px;
-  border: none;
-  border-radius: 12px;
-  margin-top: 20px;
+.e-learning-ui-kit {
+  background: rgba(229, 109, 69, 0.1);
+}
 
-  color: var(--neutral-200-background);
-  font-family: 'Urbanist', sans-serif;
-  font-size: 1rem;
+.tinkdy {
+  background: rgba(19, 206, 102, 0.15);
+}
 
-  cursor: pointer;
+.vietjet {
+  background: rgba(237, 55, 41, 0.1);
+}
+
+.charity {
+  background: rgba(255, 198, 60, 0.15);
+}
+
+.tinkdy .tag {
+  background: rgba(19, 206, 102, 0.3);
+}
+
+.vietjet .tag {
+  background: rgba(237, 55, 41, 0.15);
+}
+
+.charity .tag {
+  background: rgba(255, 198, 60, 0.3);
 }
 
 ul li {
-  list-style-type: none;
   display: flex;
   align-items: center;
   margin: 0.75rem 0;
+
+  color: var(--neutral-300);
 }
 
 ul li svg {
@@ -164,43 +173,11 @@ ul li path {
   fill: #e56e44;
 }
 
+/* card ending */
+
 @media only screen and (max-width: 600px) {
   body {
     font-size: 14px;
-  }
-
-  .card {
-    border-radius: 20px;
-    height: auto;
-    width: 90%;
-    padding: 20px 20px;
-    margin-bottom: 35px;
-
-    display: flex;
-    flex-direction: column;
-  }
-  .card .left {
-    width: 100%;
-  }
-  .card .right {
-    margin-top: 20px;
-    width: 100%;
-  }
-
-  .info {
-    width: 100%;
-    padding: 32px 0;
-  }
-
-  .case-study {
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  article {
-    padding: 0 2vw;
   }
 
   header {
@@ -213,7 +190,33 @@ ul li path {
     padding: 0;
   }
 
-  #hero {
-    display: none;
+  .card {
+    border-radius: 20px;
+    height: auto;
+    width: 90%;
+    padding: 32px;
+    margin-bottom: 35px;
+
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .card__container {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card .card__content {
+    width: 100%;
+  }
+
+  .card .card__photo {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  section {
+    padding: 0 2vw;
   }
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" type="image/x-icon" href="/images/avatar.png">
+    <link rel="icon" type="image/x-icon" href="./images/avatar.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
@@ -14,7 +14,6 @@
 
 <body>
     <nav class="nav">
-        <!-- home -->
         <a href="#home">
             <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -70,51 +69,69 @@
                     <path d="M26 13c0 9-10 16-10 16S6 22 6 13a10 10 0 1 1 20 0v0Z" stroke="#000" stroke-width="1.5"
                         stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <h6>Danang, Vietnam</h6>
+                <h6 class="location__content text-sm">DANANG, VIETNAM</h6>
             </div>
-            <h1 class="hello">Hi! I'm Minh Pham! 👋🏻 </h1>
-            <h6>A product designer who has a great enthusiasm for designing digital products that
+            <div class="hello ">
+                <h1 class="text-5xl"> <span class="hello__text text-5xl">Hi! I'm Minh Pham!</span> 👋🏻 </h1>
+
+            </div>
+
+            <h6 class="hello__description text-xl">A product designer who has a great enthusiasm for designing digital
+                products
+                that
                 make life easier and happier.
                 <br> Currently seeking for a job which helps me to improve UX research skills.
                 <br> Previously worked as a UI freelance designer at a start-up named Tinkdy.com
             </h6>
-
-            <button
+            <button class="text-lg btn-lg"
                 onclick="window.open('https://drive.google.com/drive/folders/15BQgJ4UAAMHPf_ewN-30UriSj4P7LVPD')">Download
-                my CV</button>
+                my CV
+                <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 4v19M7 14l9 9 9-9M5 27h22" stroke="#000" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg> </button>
         </div>
-        <!-- <div id="hero">
-            <img src="./images/hero.png" alt="hero" srcset="">
-        </div> -->
-    </header>
-    <article id="portfolio">
-        <section>
-            <!-- <div class="case-study">
-                <div class="card item4">
-                    <div class="left">
-                        <p class="article-description">
-                            May 2022 - June 2020
-                        </p>
-                        <h5>Charity App</h5>
-                        <span class="tag">UX Research</span>
-                        <span class="tag">1 week</span>
-                        <span class="tag">Styleguide</span>
-                        <p class="text-body">Due to Vietjet poorly-designed interface and not-so-natural UX, the website
-                            is not only unhelpful to customers, it also shows the lack of expertise of the brand. So, I
-                            decided to re-design a flow of the app.</p>
-                        <button onclick="location.href='charity.html'">View case study</button>
-                    </div>
-                    <div class="right"> <img src="./images/charity.png" alt="charity" srcset=""></div>
-                </div>
-            </div> -->
 
-            <div class="case-study">
-                <div class="card item3">
+    </header>
+    <article>
+        <section id="portfolio">
+            <div class="card__container">
+                <div class="card charity">
+                    <div class="card__content">
+                        <p class="card__timeline text-sm">
+                            May 2022 - June 2022
+                        </p>
+                        <h5 class="card__title text-2xl">Charity App</h5>
+                        <div class="tag__container">
+                            <div class="tag">UX Research</div>
+                            <div class="tag">1 week</div>
+                            <div class="tag">Styleguide</div>
+                        </div>
+
+                        <p class="card__description text-md">
+                            Chado is a technology platform that helps you find reputable, online fundraising campaigns
+                            and find people in need around you.
+                        </p>
+                        <button class="btn-md" onclick="location.href='charity.html'">View case study
+
+                            <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 16h22M18 7l9 9-9 9" stroke="#000" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                    </div>
+                    <div class="card__photo"> <img src="./images/charity-app/thumbnail-card.png" alt="charity"
+                            srcset="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="case-study">
+                <div class="card vietjet">
                     <div class="left">
                         <p class="article-description">
                             April 2022
                         </p>
-                        <h5>Redesign a Flight Booking Mobile App</h5>
+                        <h5 class="text-2xl">Flight Booking Mobile App</h5>
                         <span class="tag">Team project</span>
                         <span class="tag">1 week</span>
                         <span class="tag">Styleguide</span>
@@ -125,18 +142,16 @@
                     </div>
                     <div class="right"> <img src="./images/Vietjet.png" alt="" srcset=""></div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="case-study">
-                <div class="card item2">
+            <!-- <div class="case-study">
+                <div class="card tinkdy">
                     <div class="left">
                         <p class="article-description">
                             2021 - 2022
                         </p>
                         <h5>Tinkdy - E-learning Web/ App</h5>
-                        <!-- <span class="tag">Team project</span>
-                        <span class="tag">1 week</span>
-                        <span class="tag">Styleguide</span> -->
+                        
                         <p class="text-body">A platform helps students pick right courses and educators teach online
                         </p>
                         <button onclick="window.open('http://tinkdy.com/')">View
@@ -144,15 +159,15 @@
                     </div>
                     <div class="right"> <img src="./images/tinkdy.png" alt="" srcset=""></div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="case-study">
-                <div class="card item1">
-                    <div class="left">
-                        <p class="article-description">
+            <div class="card__container">
+                <div class="card e-learning-ui-kit">
+                    <div class="card__content">
+                        <p class="card__timeline text-sm">
                             March 2022
                         </p>
-                        <h5>E-learning Online Courses Mobile UI Kit</h5>
+                        <h5 class="card__title text-2xl">E-learning Online Courses Mobile UI Kit</h5>
                         <ul>
                             <li> <span>
                                     <svg width="26" height="27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -199,19 +214,28 @@
                             liberty
                             of using some of my design skills to try to re-design their Homepage.</p> -->
 
-                        <button
+                        <button class="btn-md"
                             onclick="window.open('https://www.figma.com/file/Z2hrBgHNhQfm9CVobmsrrs/E-Learning-Online-Course-App-UI-kit-2?node-id=2%3A4')">View
-                            on Figma</button>
+                            on Figma
+
+                            <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.25 20.25a4.25 4.25 0 1 0 0-8.5 4.25 4.25 0 0 0 0 8.5ZM16 11.75v-8.5h-4.25a4.25 4.25 0 0 0 0 8.5H16Z"
+                                    stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M16 20.25v-8.5h-4.25a4.25 4.25 0 0 0 0 8.5H16ZM16 11.75v-8.5h4.25a4.25 4.25 0 1 1 0 8.5H16ZM16 20.25v4.25a4.25 4.25 0 1 1-4.25-4.25H16Z"
+                                    stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></button>
                     </div>
-                    <div class="right"> <img src="./images/Dribbble shot HD - 1.png" alt=""> </div>
+                    <div class="card__photo"> <img src="./images/E-education-UI-kits/thumbnail-card.png" alt=""> </div>
                 </div>
             </div>
         </section>
     </article>
     <footer id="contact">
-        <h3 style="margin-bottom: 3rem">Let's talk!</h3>
-        <h6>Please contact me through this email</h6>
-        <h6 style="font-weight:500; text-decoration: underline">phamanhminh0401@gmail.com</h6>
+        <h3 class="text-3xl" style="margin-bottom: 2rem">Let's talk!</h3>
+        <h6 class="text-lg" style="margin-bottom: 0.5rem">Please contact me through this email</h6>
+        <h6 class="text-xl" style="font-weight:500; text-decoration: underline">phamanhminh0401@gmail.com</h6>
     </footer>
 </body>
 
