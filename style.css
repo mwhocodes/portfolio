@@ -2,8 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Roboto+Flex:wght@100&display=swap');
 :root {
+  --gradient: linear-gradient(
+    45deg,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #f9f871
+  );
+
   --neutral-50-white: #fff;
   --neutral-100-table-header: #f8f8fc;
   --neutral-200-background: #f3f3f7;
@@ -14,7 +24,11 @@
   --neutral-700-text-secondary: #82869e;
   --neutral-800-text-primary: #434657;
   --neutral-900-text-title: #1b1d29;
-  --blue: blue;
+
+  --neutral-50: #6c7686;
+  --neutral-100: #555e6d;
+  --neutral-200: #3d4655;
+  --neutral-300: #27303e;
 }
 
 *,
@@ -23,6 +37,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 body {
@@ -30,9 +45,8 @@ body {
   /* align-items: center;
   justify-content: center; */
   flex-direction: column;
-  font-size: 18px;
-  font-family: 'Urbanist', sans-serif;
   font-weight: normal;
+  font-family: 'Urbanist', sans-serif;
 }
 
 .text-body {
@@ -40,11 +54,115 @@ body {
   font-family: 'Urbanist', sans-serif;
   line-height: 1.75rem;
   color: var(--neutral-800-text-primary);
-
-  /* font-family: 'Roboto Flex', sans-serif; */
 }
 
-h1 {
+/* FONT-SIZE */
+
+/* used for display*/
+.text-5xl {
+  font-size: 4.5rem;
+  line-height: 5.625rem;
+  letter-spacing: -2%;
+}
+
+/* used for page title*/
+.text-4xl {
+  font-size: 3rem;
+  line-height: 3.75rem;
+  letter-spacing: -2%;
+}
+
+/* used for card title*/
+.text-3xl {
+  font-size: 2.875rem;
+  line-height: 3.5rem;
+  letter-spacing: -2%;
+}
+
+/* used for headline of paragraph*/
+.text-2xl {
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  letter-spacing: -2%;
+}
+
+/* used for page description, big caption*/
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+/* used for large button text*/
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+/* used for card description, base content, small button text */
+.text-md {
+  font-size: 1rem;
+  /* font-family: 'Roboto Flex', sans-serif; */
+  line-height: 1.75rem;
+}
+
+/* used for chip, caption, overline */
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+}
+
+.tag__container {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+
+.tag {
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-right: 4px;
+
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--neutral-300);
+}
+
+button {
+  display: flex;
+  align-items: center;
+
+  margin-top: 20px;
+  padding: 16px 18px;
+
+  background-color: var(--neutral-900-text-title);
+  border: none;
+  border-radius: 12px;
+
+  font-family: 'Urbanist', sans-serif;
+  color: var(--neutral-200-background);
+  font-weight: 400;
+
+  cursor: pointer;
+}
+
+.btn-lg {
+  height: 64px;
+}
+
+.btn-md {
+  height: 56px;
+}
+
+.btn-md svg {
+  transform: scale(0.8);
+}
+
+.btn-md svg rect {
+  stroke: white;
+}
+
+/* h1 {
   font-size: 4.5rem;
   line-height: 5.625rem;
   letter-spacing: -2%;
@@ -84,19 +202,30 @@ h6 {
   font-size: 1.25rem;
   line-height: 2rem;
   font-weight: normal;
-}
-
-p {
+} 
+*/
+/* p {
+  font-family: 'Inter', sans-serif;
   line-height: 1.5rem;
-}
+} */
 
 path {
-  stroke: var(--neutral-900-text-title);
+  stroke: var(--neutral-300);
 }
 
 a:hover path {
-  fill: var(--neutral-900-text-title);
+  fill: var(--neutral-300);
 }
+
+button path {
+  stroke: #fff;
+}
+
+button svg {
+  margin-left: 8px;
+}
+
+/* nav starting */
 
 .nav {
   display: flex;
@@ -107,7 +236,27 @@ a:hover path {
   width: 100px;
   height: 100vh;
   position: fixed;
+
+  /* background: rgba(255, 255, 255, 0.1); */
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
 }
+
+nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+  margin: 12px;
+}
+
+/* nav end */
 
 @media only screen and (max-width: 600px) {
   .nav {

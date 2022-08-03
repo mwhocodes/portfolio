@@ -1,55 +1,54 @@
-h4 {
-  margin-bottom: 1.5rem;
+.thumbnail__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-h6 {
-  margin: 0.5rem 0;
+.thumbnail__title {
+  margin-bottom: 1.5rem;
+  color: var(--neutral-200);
+}
+
+.thumbnail__heading {
+  color: var(--neutral-200);
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+  font-weight: 700;
+}
+
+.thumbnail__description {
+  color: var(--neutral-300);
+}
+
+.thumbnail__photo img {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  padding-right: 5vw;
+}
+
+.thumbnail__content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: calc(10vw + 100px);
+
+  width: 60%;
 }
 
 .tool {
-  /* display: flex; */
-  gap: 12px;
+  display: flex;
+  gap: 16px;
 }
 
 .tool img {
-  height: 52px;
+  height: 48px;
   border-radius: 12px;
 }
 
 .tag {
-  font-size: 0.975rem;
-  line-height: 1.5rem;
-
-  padding: 8px 12px;
-  border-radius: 8px;
-  margin-right: 8px;
-
-  background: rgba(255, 198, 60, 0.3);
+  background: rgba(255, 198, 60, 0.35);
 }
-
-/* nav starting */
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  width: 100px;
-  height: 100vh;
-  position: fixed;
-}
-
-a {
-  display: flex;
-  align-items: center;
-
-  width: 48px;
-  height: 48px;
-  margin: 12px;
-}
-
-/* nav end */
 
 header {
   height: 100vh;
@@ -62,37 +61,9 @@ header {
   background: rgba(255, 198, 60, 0.15);
 }
 
-header div {
+ul li {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-header h6 {
-  font-weight: 600;
-}
-
-#hero img {
-  width: 100%;
-  display: flex;
-  margin: auto;
-  padding-right: 5vw;
-}
-
-header .content {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  padding-left: calc(5vw + 100px);
-
-  width: 60%;
-}
-
-ul li {
-  list-style-type: none;
-  display: flex;
-  align-items: flex-start;
-  /* margin: 0.75rem 0; */
 }
 
 ul li svg {
@@ -105,21 +76,24 @@ ul li path {
   fill: #14ae5c;
 }
 
-.scope {
+/* .scope {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
-}
+} */
 
-.scope > div {
+/* .scope > div {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 
   margin-top: 1rem;
-}
+} */
 
+section:nth-child(even) {
+  background-color: rgba(255, 198, 60, 0.1);
+}
 section .content {
   width: 50%;
   margin-right: 15vw;
@@ -144,18 +118,103 @@ section .photo img {
 
 section {
   height: auto;
-  padding: 10vh 10vw 10vh calc(10vw + 100px);
+  padding: 5vh 15vw 5vh calc(15vw + 100px);
 
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   justify-content: flex-start;
 }
 
-li {
-  padding: 0.75rem 0;
-  list-style: none;
+section > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  gap: 1rem;
+
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
+li {
+  padding: 0.5rem 0;
+}
+
+.heading {
+  color: rgba(255, 198, 60, 0.4);
+}
+
+.subheading {
+  color: var(--neutral-200);
+  margin: 3rem 0 1rem 0;
+}
+
+.subheading-sm {
+  color: var(--neutral-300);
+  margin: 0;
+}
+
+.highlight-number {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+
+  background-color: white;
+  border-radius: 52px;
+  color: #2a9d60;
+  font-size: 1rem;
+}
+
+.mySlides {
+  display: none;
+}
+.mySlide img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  background-color: #f1f1f1;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover,
+.next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
 @media only screen and (max-width: 600px) {
   .content,
   section {
