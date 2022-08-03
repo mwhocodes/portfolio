@@ -147,32 +147,13 @@ li {
 }
 
 .subheading {
-  color: var(--neutral-200);
   margin: 3rem 0 1rem 0;
 }
 
-.subheading-sm {
-  color: var(--neutral-300);
-  margin: 0;
-}
-
-.highlight-number {
-  width: 52px;
-  height: 52px;
-
+.mySlides {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 8px;
-
-  background-color: white;
-  border-radius: 52px;
-  color: #2a9d60;
-  font-size: 1rem;
-}
-
-.mySlides {
-  display: none;
 }
 .mySlide img {
   vertical-align: middle;
@@ -182,7 +163,10 @@ li {
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
+  margin: 2rem 0;
+
+  width: 100%;
+  min-height: 320px;
 }
 
 /* Next & previous buttons */
@@ -215,6 +199,53 @@ li {
   background-color: #f1f1f1;
   color: black;
 }
+
+.data-container,
+.image__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+
+  margin: 1rem 0;
+}
+
+.image__container {
+  gap: 2rem;
+}
+
+.data-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  height: auto;
+  width: 30vw;
+  padding: 2.5rem;
+}
+
+.highlightedNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+
+  color: #2a9d60;
+  font-size: 3rem;
+}
+
+.highlightedText {
+  color: var(--neutral-100);
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin: auto;
+}
+
 @media only screen and (max-width: 600px) {
   .content,
   section {

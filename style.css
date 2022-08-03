@@ -42,18 +42,10 @@
 
 body {
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
   flex-direction: column;
+
   font-weight: normal;
   font-family: 'Urbanist', sans-serif;
-}
-
-.text-body {
-  margin-top: 1.25rem;
-  font-family: 'Urbanist', sans-serif;
-  line-height: 1.75rem;
-  color: var(--neutral-800-text-primary);
 }
 
 /* FONT-SIZE */
@@ -101,7 +93,6 @@ body {
 /* used for card description, base content, small button text */
 .text-md {
   font-size: 1rem;
-  /* font-family: 'Roboto Flex', sans-serif; */
   line-height: 1.75rem;
 }
 
@@ -109,6 +100,28 @@ body {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.75rem;
+}
+
+p,
+li {
+  line-height: 1.75rem;
+  font-size: 1rem;
+
+  color: var(--neutral-300);
+}
+
+.heading {
+  font-size: 3rem;
+  line-height: 3.75rem;
+  letter-spacing: -2%;
+}
+
+.subheading {
+  font-size: 1.25rem;
+  line-height: 2rem;
+
+  color: var(--neutral-200);
+  font-weight: 700;
 }
 
 .tag__container {
@@ -162,53 +175,6 @@ button {
   stroke: white;
 }
 
-/* h1 {
-  font-size: 4.5rem;
-  line-height: 5.625rem;
-  letter-spacing: -2%;
-  font-weight: normal;
-}
-
-h2 {
-  font-size: 3.75rem;
-  line-height: 4.625rem;
-  letter-spacing: -2%;
-  font-weight: 600;
-}
-
-h3 {
-  font-size: 3rem;
-  line-height: 3.75rem;
-  letter-spacing: -2%;
-}
-
-h4 {
-  font-size: 2.875rem;
-  line-height: 3.5rem;
-  letter-spacing: -2%;
-  font-weight: normal;
-}
-
-h5 {
-  font-size: 1.875rem;
-  line-height: 2.375rem;
-  letter-spacing: -2%;
-  font-weight: 600;
-
-  margin-bottom: 1.5rem;
-}
-
-h6 {
-  font-size: 1.25rem;
-  line-height: 2rem;
-  font-weight: normal;
-} 
-*/
-/* p {
-  font-family: 'Inter', sans-serif;
-  line-height: 1.5rem;
-} */
-
 path {
   stroke: var(--neutral-300);
 }
@@ -226,6 +192,10 @@ button svg {
 }
 
 /* nav starting */
+
+ol {
+  padding-left: 20px;
+}
 
 .nav {
   display: flex;
