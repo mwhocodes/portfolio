@@ -39,6 +39,9 @@ footer {
 
 .hello__text {
   font-weight: 500;
+  font-size: 4.5rem;
+  line-height: 5.625rem;
+  letter-spacing: -2%;
 
   /*! animating-gradients ==> text */
   background-image: var(--gradient);
@@ -209,6 +212,10 @@ ul li path {
 
   .card .card__content {
     width: 100%;
+  }
+
+  .card__content {
+    margin-left: 0;
   }
 
   .card .card__photo {

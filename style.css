@@ -63,6 +63,8 @@ body {
 
 .flex-wrap {
   display: flex;
+  justify-content: center;
+
   flex-wrap: wrap;
   margin: auto;
   gap: 2.5rem;
@@ -73,12 +75,12 @@ body {
 }
 
 .divider {
-  width: 10vw;
+  width: 15vw;
   height: 2px;
   border-radius: 4px;
 
   background-color: #f1f1f1;
-  margin: 3rem auto;
+  margin: 1rem auto;
 }
 
 /* FONT-SIZE */
@@ -248,13 +250,13 @@ ol {
   height: 100vh;
   position: fixed;
 
-  /* background: rgba(255, 255, 255, 0.1); */
-  background-image: linear-gradient(
+  /* background: rgba(255, 255, 255, 0.4); */
+  /* background-image: linear-gradient(
     to right,
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0)
-  );
-  backdrop-filter: blur(10px);
+  ); */
+  backdrop-filter: blur(5px);
 }
 
 nav a {
@@ -289,11 +291,6 @@ nav a {
   .nav a {
     display: flex;
     justify-content: center;
-  }
-
-  h1 {
-    font-size: 3.7rem;
-    font-weight: normal;
   }
 
   .image-responsive {
