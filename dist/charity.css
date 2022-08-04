@@ -207,15 +207,12 @@ li {
   justify-content: center;
   height: auto;
 
-  margin: 1rem 0;
-}
-
-.image__container {
-  gap: 2rem;
+  gap: 2.5rem;
+  position: relative;
 }
 
 .data-item {
-  padding: 20px;
+  /* padding: 20px; */
   font-size: 30px;
   text-align: center;
 
@@ -224,8 +221,12 @@ li {
   flex-direction: column;
 
   height: auto;
-  width: 30vw;
-  padding: 2.5rem;
+  width: 300px;
+}
+
+.image__container {
+  gap: 2rem;
+  margin: 1rem 0;
 }
 
 .highlightedNumber {
@@ -244,6 +245,10 @@ li {
   font-size: 1.125rem;
   line-height: 1.75rem;
   margin: auto;
+}
+
+.value-proposition .flex-center {
+  max-width: 180px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -273,5 +278,9 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .data-item {
+    width: 100%;
   }
 }
