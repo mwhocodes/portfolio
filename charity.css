@@ -39,6 +39,10 @@
   width: 60%;
 }
 
+.thumbnail__container .tag__container {
+  margin-bottom: 0;
+}
+
 .tool {
   display: flex;
   gap: 16px;
