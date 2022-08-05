@@ -37,12 +37,17 @@ footer {
   margin-bottom: 20px;
 }
 
+.hello__title,
 .hello__text {
   font-weight: 500;
   font-size: 4.5rem;
   line-height: 5.625rem;
   letter-spacing: -2%;
 
+  font-size: clamp(3rem, 5.25vw, 4.5rem);
+}
+
+.hello__text {
   /*! animating-gradients ==> text */
   background-image: var(--gradient);
   background-clip: text;
@@ -161,7 +166,7 @@ section {
 ul li {
   display: flex;
   align-items: center;
-  margin: 0.75rem 0;
+  margin: 0.5rem 0;
 
   color: var(--neutral-300);
 }
@@ -184,7 +189,7 @@ ul li path {
   }
 
   header {
-    width: auto;
+    height: auto;
     flex-direction: column;
     padding: 32px;
   }
@@ -219,7 +224,7 @@ ul li path {
   }
 
   .card .card__photo {
-    margin-top: 20px;
+    margin-bottom: 20px;
     width: 100%;
   }
 
