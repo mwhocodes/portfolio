@@ -1,3 +1,15 @@
+header {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 198, 60, 0.15);
+}
+
 .thumbnail__container {
   display: flex;
   align-items: center;
@@ -55,17 +67,6 @@
 
 .tag {
   background: rgba(255, 198, 60, 0.35);
-}
-
-header {
-  height: 100vh;
-  width: 100vw;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: rgba(255, 198, 60, 0.15);
 }
 
 ul li {
