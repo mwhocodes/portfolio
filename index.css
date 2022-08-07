@@ -202,8 +202,8 @@ ul li path {
     border-radius: 20px;
     height: auto;
     width: 90%;
-    padding: 32px;
-    margin-bottom: 35px;
+    padding: 52px 32px;
+    margin-bottom: 40px;
 
     display: flex;
     flex-direction: column-reverse;
