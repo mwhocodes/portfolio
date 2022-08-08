@@ -166,12 +166,12 @@ li {
   margin: 3rem 0 1rem 0;
 }
 
-.mySlides {
+.slide {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.mySlide img {
+.slide img {
   vertical-align: middle;
 }
 
