@@ -28,11 +28,17 @@ header {
   color: var(--neutral-200);
   text-transform: uppercase;
   margin-top: 1.5rem;
+
+  font-size: 0.875rem;
+  line-height: 1.75rem;
   font-weight: 700;
 }
 
 .thumbnail__description {
   color: var(--neutral-300);
+
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .thumbnail__photo img {
@@ -57,12 +63,14 @@ header {
 
 .tool {
   display: flex;
-  gap: 16px;
+  gap: 8px;
+  margin-top: 8px;
 }
 
 .tool img {
   height: 48px;
   border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .tag {

@@ -172,7 +172,7 @@ b {
   display: flex;
   gap: 4px;
   flex-wrap: wrap;
-  margin: 12px 0;
+  margin-top: 8px;
 }
 
 .tag {
