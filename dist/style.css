@@ -150,6 +150,8 @@ b {
   font-size: 3rem;
   line-height: 3.75rem;
   letter-spacing: -2%;
+
+  font-size: clamp(2rem, 5.25vw, 3rem);
 }
 
 .subheading {
@@ -186,7 +188,7 @@ b {
   color: var(--neutral-300);
 }
 
-span {
+li span {
   display: flex;
   align-items: center;
 }

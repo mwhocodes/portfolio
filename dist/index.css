@@ -44,7 +44,7 @@ footer {
   line-height: 5.625rem;
   letter-spacing: -2%;
 
-  font-size: clamp(3rem, 5.25vw, 4.5rem);
+  font-size: clamp(3.5rem, 5.25vw, 4.5rem);
 }
 
 .hello__text {
@@ -151,17 +151,21 @@ section {
   background: rgba(255, 198, 60, 0.15);
 }
 
-.tinkdy .tag {
+/* .tinkdy .tag {
   background: rgba(19, 206, 102, 0.3);
 }
 
 .vietjet .tag {
   background: rgba(237, 55, 41, 0.15);
-}
+} */
 
 .charity .tag {
   background: rgba(255, 198, 60, 0.3);
 }
+
+/* .e-learning-ui-kit .tag {
+  background: rgba(229, 109, 69, 0.3);
+} */
 
 ul li {
   display: flex;
@@ -188,15 +192,18 @@ ul li path {
     font-size: 14px;
   }
 
-  header {
+  header,
+  footer {
     height: auto;
     flex-direction: column;
     padding: 32px;
+    margin-bottom: 100px;
   }
 
-  footer {
-    padding: 0;
-  }
+  /* article {
+    height: auto;
+    margin: 40px 0;
+  } */
 
   .card {
     border-radius: 20px;
